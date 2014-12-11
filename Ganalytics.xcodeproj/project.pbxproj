@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0998001A39F2550039E317 /* Ganalytics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC0997FF1A39F2550039E317 /* Ganalytics.h */; };
+		BC0998021A39F2550039E317 /* Ganalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0998011A39F2550039E317 /* Ganalytics.m */; };
+		BC0998081A39F2550039E317 /* libGanalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0997FC1A39F2550039E317 /* libGanalytics.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC0998091A39F2550039E317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0997F41A39F2550039E317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0997FB1A39F2550039E317;
+			remoteInfo = Ganalytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC0997FA1A39F2550039E317 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BC0998001A39F2550039E317 /* Ganalytics.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC0997FC1A39F2550039E317 /* libGanalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGanalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0997FF1A39F2550039E317 /* Ganalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ganalytics.h; sourceTree = "<group>"; };
+		BC0998011A39F2550039E317 /* Ganalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ganalytics.m; sourceTree = "<group>"; };
+		BC0998071A39F2550039E317 /* GanalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GanalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC09980D1A39F2550039E317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0997F91A39F2550039E317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0998041A39F2550039E317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0998081A39F2550039E317 /* libGanalytics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0997F31A39F2550039E317 = {
+			isa = PBXGroup;
+			children = (
+				BC0997FE1A39F2550039E317 /* Ganalytics */,
+				BC09980B1A39F2550039E317 /* GanalyticsTests */,
+				BC0997FD1A39F2550039E317 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0997FD1A39F2550039E317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0997FC1A39F2550039E317 /* libGanalytics.a */,
+				BC0998071A39F2550039E317 /* GanalyticsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC0997FE1A39F2550039E317 /* Ganalytics */ = {
+			isa = PBXGroup;
+			children = (
+				BC0997FF1A39F2550039E317 /* Ganalytics.h */,
+				BC0998011A39F2550039E317 /* Ganalytics.m */,
+			);
+			path = Ganalytics;
+			sourceTree = "<group>";
+		};
+		BC09980B1A39F2550039E317 /* GanalyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC09980C1A39F2550039E317 /* Supporting Files */,
+			);
+			path = GanalyticsTests;
+			sourceTree = "<group>";
+		};
+		BC09980C1A39F2550039E317 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC09980D1A39F2550039E317 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0997FB1A39F2550039E317 /* Ganalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0998101A39F2550039E317 /* Build configuration list for PBXNativeTarget "Ganalytics" */;
+			buildPhases = (
+				BC0997F81A39F2550039E317 /* Sources */,
+				BC0997F91A39F2550039E317 /* Frameworks */,
+				BC0997FA1A39F2550039E317 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ganalytics;
+			productName = Ganalytics;
+			productReference = BC0997FC1A39F2550039E317 /* libGanalytics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC0998061A39F2550039E317 /* GanalyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0998131A39F2550039E317 /* Build configuration list for PBXNativeTarget "GanalyticsTests" */;
+			buildPhases = (
+				BC0998031A39F2550039E317 /* Sources */,
+				BC0998041A39F2550039E317 /* Frameworks */,
+				BC0998051A39F2550039E317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC09980A1A39F2550039E317 /* PBXTargetDependency */,
+			);
+			name = GanalyticsTests;
+			productName = GanalyticsTests;
+			productReference = BC0998071A39F2550039E317 /* GanalyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0997F41A39F2550039E317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Emilio Pavia";
+				TargetAttributes = {
+					BC0997FB1A39F2550039E317 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					BC0998061A39F2550039E317 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = BC0997F71A39F2550039E317 /* Build configuration list for PBXProject "Ganalytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC0997F31A39F2550039E317;
+			productRefGroup = BC0997FD1A39F2550039E317 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0997FB1A39F2550039E317 /* Ganalytics */,
+				BC0998061A39F2550039E317 /* GanalyticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC0998051A39F2550039E317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0997F81A39F2550039E317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0998021A39F2550039E317 /* Ganalytics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0998031A39F2550039E317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC09980A1A39F2550039E317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0997FB1A39F2550039E317 /* Ganalytics */;
+			targetProxy = BC0998091A39F2550039E317 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC09980E1A39F2550039E317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC09980F1A39F2550039E317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0998111A39F2550039E317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC0998121A39F2550039E317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BC0998141A39F2550039E317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GanalyticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC0998151A39F2550039E317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GanalyticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0997F71A39F2550039E317 /* Build configuration list for PBXProject "Ganalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC09980E1A39F2550039E317 /* Debug */,
+				BC09980F1A39F2550039E317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0998101A39F2550039E317 /* Build configuration list for PBXNativeTarget "Ganalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0998111A39F2550039E317 /* Debug */,
+				BC0998121A39F2550039E317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC0998131A39F2550039E317 /* Build configuration list for PBXNativeTarget "GanalyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0998141A39F2550039E317 /* Debug */,
+				BC0998151A39F2550039E317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC0997F41A39F2550039E317 /* Project object */;
+}
