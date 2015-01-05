@@ -10,7 +10,6 @@
 		BC0998001A39F2550039E317 /* Ganalytics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC0997FF1A39F2550039E317 /* Ganalytics.h */; };
 		BC0998021A39F2550039E317 /* Ganalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0998011A39F2550039E317 /* Ganalytics.m */; };
 		BC0998081A39F2550039E317 /* libGanalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0997FC1A39F2550039E317 /* libGanalytics.a */; };
-		BC09981A1A39F3980039E317 /* GanalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0998191A39F3980039E317 /* GanalyticsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 		BC0998011A39F2550039E317 /* Ganalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ganalytics.m; sourceTree = "<group>"; };
 		BC0998071A39F2550039E317 /* GanalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GanalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC09980D1A39F2550039E317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC0998191A39F3980039E317 /* GanalyticsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanalyticsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				BC09980C1A39F2550039E317 /* Supporting Files */,
-				BC0998191A39F3980039E317 /* GanalyticsTests.m */,
 			);
 			path = GanalyticsTests;
 			sourceTree = "<group>";
@@ -204,7 +201,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC09981A1A39F3980039E317 /* GanalyticsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
