@@ -26,6 +26,7 @@
 @property (nonatomic, strong) NSDictionary *defaultParameters;
 @property (nonatomic, strong) NSMutableDictionary *customDimensions;
 @property (nonatomic, strong) NSMutableDictionary *customMetrics;
+@property (nonatomic, strong) NSMutableDictionary *overrideParameters;
 
 @end
 
@@ -79,6 +80,7 @@
         
         self.customDimensions = [NSMutableDictionary dictionary];
         self.customMetrics = [NSMutableDictionary dictionary];
+        self.overrideParameters = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -148,6 +150,7 @@
     NSAssert(self.trackingID, @"trackingID cannot be nil");
     
     NSMutableDictionary *params = self.defaultParameters.mutableCopy;
+    [params addEntriesFromDictionary:self.overrideParameters];
     [params setObject:self.trackingID forKey:@"tid"];
     [params addEntriesFromDictionary:self.customDimensions];
     [params addEntriesFromDictionary:self.customMetrics];
@@ -206,6 +209,31 @@
     } else {
         NSString *key = [NSString stringWithFormat:@"cm%ld", (long)index];
         self.customMetrics[key] = [NSString stringWithFormat:@"%ld", (long)value];
+    }
+}
+
+- (void)setValue:(id)value forDefaultParameter:(GANDefaultParameter)parameter {
+    NSString *key = nil;
+    switch (parameter) {
+        case GANApplicationID:
+            key = @"aid";
+            break;
+        case GANApplicationName:
+            key = @"an";
+            break;
+        case GANApplicationVersion:
+            key = @"av";
+            break;
+        default:
+            break;
+    }
+    
+    if (key) {
+        if (value) {
+            self.overrideParameters[key] = value;
+        } else {
+            [self.overrideParameters removeObjectForKey:key];
+        }
     }
 }
 

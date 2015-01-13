@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, GANDefaultParameter) {
+    GANApplicationID,
+    GANApplicationName,
+    GANApplicationVersion
+};
+
 @interface Ganalytics : NSObject
 
 @property (nonatomic, strong) NSString *trackingID;
@@ -40,5 +46,7 @@
 
 - (void)setCustomMetricAtIndex:(NSInteger)index     // between 1 and 200 (inclusive)
                          value:(NSInteger)value;
+
+- (void)setValue:(id)value forDefaultParameter:(GANDefaultParameter)parameter;  // use this method to override default parameters
 
 @end
