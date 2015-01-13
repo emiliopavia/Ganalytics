@@ -177,6 +177,16 @@
     [self sendRequestWithParameters:parameters date:[NSDate date]];
 }
 
+- (void)sendView:(NSString *)screenName {
+    NSParameterAssert(screenName);
+    
+    NSMutableDictionary *parameters = @{ @"t" : @"screenview",
+                                         @"cd" : screenName }.mutableCopy;
+    
+    [self sendRequestWithParameters:parameters];
+
+}
+
 - (void)setCustomDimensionAtIndex:(NSInteger)index
                             value:(NSString *)value {
     NSParameterAssert(value);

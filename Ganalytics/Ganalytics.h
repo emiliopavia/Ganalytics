@@ -33,6 +33,8 @@
                           name:(NSString *)name     // optional
                          label:(NSString *)label;   // optional
 
+- (void)sendView:(NSString *)screenName;
+
 - (void)setCustomDimensionAtIndex:(NSInteger)index  // between 1 and 200 (inclusive)
                             value:(NSString *)value;
 
