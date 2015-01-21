@@ -8,10 +8,10 @@
 
 #import "Ganalytics.h"
 
-#ifdef NDEBUG
-    #define GANLog(...)
-#else
+#ifdef DEBUG
     #define GANLog NSLog
+#else
+    #define GANLog(...)
 #endif
 
 #define MAX_PAYLOAD_LENGTH 8192
