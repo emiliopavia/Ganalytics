@@ -19,7 +19,6 @@
 
 @interface Ganalytics () <NSURLSessionDelegate>
 
-@property (nonatomic, strong, readwrite) NSString *clientID;
 @property (nonatomic, strong, readwrite) NSString *userAgent;
 
 @property (nonatomic, strong) NSURLSession *session;
@@ -47,16 +46,16 @@
     return sharedInstance;
 }
 
-- (instancetype)initWithTrackingID:(NSString *)trackingID {
+- (instancetype)initWithTrackingID:(NSString *)trackingID clientID:(NSString *)clientID {
     self = [super init];
     if (self) {
         self.trackingID = trackingID;
+        self.clientID = clientID;
         self.useSSL = YES;
         self.debugMode = NO;
         
         UIDevice *currentDevice = [UIDevice currentDevice];
         NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-        self.clientID = currentDevice.identifierForVendor.UUIDString;
         self.userAgent = [NSString stringWithFormat:@"%@/%@ (%@; CPU OS %@ like Mac OS X)",
                           infoDictionary[@"CFBundleName"],
                           infoDictionary[@"CFBundleShortVersionString"],
@@ -71,7 +70,6 @@
         CGRect screenBounds = [UIScreen mainScreen].bounds;
         CGFloat screenScale = [UIScreen mainScreen].scale;
         self.defaultParameters = @{ @"v" : @1,
-                                    @"cid" : self.clientID,
                                     @"aid" : infoDictionary[@"CFBundleIdentifier"],
                                     @"an" : infoDictionary[@"CFBundleName"],
                                     @"av" : infoDictionary[@"CFBundleShortVersionString"],
@@ -86,7 +84,7 @@
 }
 
 - (instancetype)init {
-    return [self initWithTrackingID:nil];
+    return [self initWithTrackingID:nil clientID:nil];
 }
 
 - (void)sendEventWithCategory:(NSString *)category
@@ -147,10 +145,12 @@
 
 - (void)sendRequestWithParameters:(NSDictionary *)parameters date:(NSDate *)date {
     NSParameterAssert(date);
+    NSAssert(self.clientID, @"clientID cannot be nil");
     NSAssert(self.trackingID, @"trackingID cannot be nil");
     
     NSMutableDictionary *params = self.defaultParameters.mutableCopy;
     [params addEntriesFromDictionary:self.overrideParameters];
+    [params setObject:self.clientID forKey:@"cid"];
     [params setObject:self.trackingID forKey:@"tid"];
     [params addEntriesFromDictionary:self.customDimensions];
     [params addEntriesFromDictionary:self.customMetrics];

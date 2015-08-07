@@ -17,13 +17,14 @@ typedef NS_ENUM(NSInteger, GANDefaultParameter) {
 @interface Ganalytics : NSObject
 
 @property (nonatomic, strong) NSString *trackingID;
+@property (nonatomic, strong) NSString *clientID;
 
 @property (nonatomic, assign) BOOL useSSL;      // YES by default
 @property (nonatomic, assign) BOOL debugMode;   // NO by deafult
 
 + (instancetype)sharedInstance;
 
-- (instancetype)initWithTrackingID:(NSString *)trackingID NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithTrackingID:(NSString *)trackingID clientID:(NSString *)clientID NS_DESIGNATED_INITIALIZER;
 
 - (void)sendEventWithCategory:(NSString *)category  // required
                        action:(NSString *)action    // required
