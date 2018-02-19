@@ -264,7 +264,7 @@
     NSMutableArray *parameters = [NSMutableArray array];
     for (id key in self) {
         id value = [self objectForKey:key];
-        NSString *parameter = [[NSString stringWithFormat: @"%@=%@", key, value] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *parameter = [[NSString stringWithFormat: @"%@=%@", key, value] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         [parameters addObject:parameter];
     }
     return [parameters componentsJoinedByString:@"&"];
